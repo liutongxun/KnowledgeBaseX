@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.2.0</version> <!-- 使用的版本 -->
+			<version>3.0.3</version> <!-- 使用的版本 -->
 		</dependency>
 
 		<!-- MySQL 数据库驱动 -->
@@ -94,6 +94,38 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+<!--			<plugin>-->
+<!--				&lt;!&ndash; mybatis generator 自动生成代码插件 &ndash;&gt;-->
+<!--				<groupId>org.mybatis.generator</groupId>-->
+<!--				<artifactId>mybatis-generator-maven-plugin</artifactId>-->
+<!--				<version>1.4.0</version>-->
+<!--				<configuration>-->
+<!--					&lt;!&ndash; 指定 MBG 的配置文件位置 &ndash;&gt;-->
+<!--					<configurationFile>src/main/resources/generator/generator-config.xml</configurationFile>-->
+<!--					&lt;!&ndash; 若已存在旧文件，则覆盖 &ndash;&gt;-->
+<!--					<overwrite>true</overwrite>-->
+<!--					&lt;!&ndash; 在控制台打印更详细的日志 &ndash;&gt;-->
+<!--					<verbose>true</verbose>-->
+<!--				</configuration>-->
+<!--				<dependencies>-->
+<!--					&lt;!&ndash; 生成代码时需要能连接到数据库，依赖对应的 JDBC 驱动 &ndash;&gt;-->
+<!--					<dependency>-->
+<!--						<groupId>mysql</groupId>-->
+<!--						<artifactId>mysql-connector-java</artifactId>-->
+<!--						<version>8.0.33</version>-->
+<!--					</dependency>-->
+<!--				</dependencies>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>generate-mybaties-code</id>-->
+<!--						<goals>-->
+<!--							<goal>generate</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
+
 		</plugins>
 	</build>
 
